@@ -17,7 +17,7 @@ div.link-image {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     background-image: url("img/logo.png");
-    width: 50px;
+    width: 10%;
 }
 
 div.link-details {
@@ -28,7 +28,7 @@ div.link-details {
     background-size: cover;
     background-repeat: no-repeat;
     flex: 1;
-    width: 100%;
+    width: 90%;
     text-align: center;
     font-weight: bold;
 }
