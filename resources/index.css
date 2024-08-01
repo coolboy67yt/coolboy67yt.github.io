@@ -1,0 +1,22 @@
+div.link {
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+}
+
+div.link:hover {
+    width: 210px;
+}
+
+div.link-image {
+    flex: 1;
+    width: 50px;
+}
+
+div.link-details {
+    flex: 1;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
