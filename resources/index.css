@@ -3,6 +3,7 @@ div.link {
     border-radius: 10px;
     text-align: center;
     display: flex;
+    background-color: black;
 }
 
 div.link:hover {
@@ -10,11 +11,15 @@ div.link:hover {
 }
 
 div.link-image {
+    background-image: url("resources/img/logo.png");
     flex: 1;
     width: 50px;
 }
 
 div.link-details {
+    background-image: url("resources/img/background-blue.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     flex: 1;
     width: 100%;
     text-align: center;
