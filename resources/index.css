@@ -1,5 +1,5 @@
 div.link {
-    width: 200px;
+    width: 500px;
     border-radius: 10px;
     text-align: center;
     display: flex;
@@ -26,7 +26,7 @@ div.link-details {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background-image: url("img/background-blue.png");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     flex: 1;
     width: 100%;
