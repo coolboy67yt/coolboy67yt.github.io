@@ -1,0 +1,97 @@
+body {
+    background-image: url("img/background-gray.png");
+    background-color: rgb(43, 43, 43); /* fallback just in case the image dont work */
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+div.links {
+    background-color: rgba(0, 0, 0, 0.451);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    color: white;
+    font-family: arial;
+    text-align: center;
+}  
+
+div.link {
+    width: 500px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: black;
+    transition-property: width;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+div.link:hover {
+    width: 530px;
+}
+
+div.link-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 20%;
+    height: 100%;
+}
+
+div.link-details {
+    margin-left: 20%; /* jank af*/
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* made by cb */
+
+
+
+
+
+
+
+
+
+/* navbar stuf */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 10px;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: arial;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #c277ff;
+  }
