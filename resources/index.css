@@ -11,13 +11,13 @@ div.link:hover {
 }
 
 div.link-image {
-    background-image: url("resources/img/logo.png");
+    background-image: url("img/logo.png");
     flex: 1;
     width: 50px;
 }
 
 div.link-details {
-    background-image: url("resources/img/background-blue.png");
+    background-image: url("img/background-blue.png");
     background-size: cover;
     background-repeat: no-repeat;
     flex: 1;
