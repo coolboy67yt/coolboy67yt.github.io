@@ -68,9 +68,12 @@ div.link-details {
 
 
 /* navbar stuf */
+div.navbar {
+   margin: 5px; 
+}
 ul {
     list-style-type: none;
-    margin: 4px;
+    margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
