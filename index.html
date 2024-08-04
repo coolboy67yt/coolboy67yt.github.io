@@ -1,42 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- boring setup :yawn: -->
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoolboyGames Website</title>
-    <link rel="stylesheet" href="resources/index.css">
-    <link rel="icon" type="image/png" href="https://yt3.ggpht.com/NdrbtQyA4r8empkO8XqrgogJlY1rhRbUkTIJCk3JLwUjxVctVnZTmTZneG_gAflYhwe1dhWcKw=s600-c-k-c0x00ffffff-no-rj-rp-mo">
-  </head>
-  <body>
-
-    <div width="100%" style="background-image: url('resources/img/background-blue.png'); height: 700px; padding: 10px; padding-top: 15px; background-repeat: no-repeat; background-size: cover;">
-      <div class="navbar">
-        <ul>
-          <li style="float: left;"><a href="index.html" style="background-image: url('resources/img/logo.png'); background-size: cover; width: 18px; background-repeat: no-repeat; height: 18px;"></a></li>
-          <li style="float: left;"><a href="index.html" class="active">Home</a></li>
-          <li><a href="page/about.html">About</a></li>
-          <li><a href="page/contact.html">Contact</a></li>
-          <li><a href="page/links.html">Links</a></li>
-        </ul>
-      </div>
-      
-      <div class="mainbanner" style="padding-right: 10px; padding-top: 13px; ">
-        <!-- cool main banner thingy -->
-        <h1 style="text-align: left;">CoolboyGames</h1>
-        <p style="text-align: left;">A minecraft youtuber and aspiring web developer.</p>
-        <img src="resources/img/logo.png" style="border-radius: 20px; float:right; width: 30%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-      </div>
-    </div>
-
-    <!-- content -->
-    <h1>&nbsp;</h1>
-
-    <h1>Website in progress</h1>
-    <hr style="border-top: 3px solid white; border-radius: 5px;">
-
-    <p>Still making the website at the moment. Check back later!</p>
-    <p>Some pages, <a href="page/links.html">(like the links page)</a> are ready to use. Why don't you check it out?</p>
-    <p>Also, the page may look weird on phones/tablets because I am still working on support for those devices.</p>
-  </body>
+    <script>
+        window.onload = function() {
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+                window.location.href = "mobile_warn.html";
+            } else {
+                window.location.href = "main.html";
+            }
+        };
+    </script>
+</head>
+<body>
+    If you see this, then something went wrong. Please report this error to coolboy67yt@gmail.com OR make a bug report on github.
+</body>
 </html>
