@@ -1,0 +1,30 @@
+        /* Style for the hidden div */
+        .submenu {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            user-select: none; /* Prevent text selection */
+        }
+
+        /* Style for the close button */
+        .close {
+            border: 2px solid lime;
+            background-color: rgb(43, 156, 43);
+            color: white;
+            font-family: arcade;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+
+        /* Submenu Positions */
+        #testsubmenu {
+            top: 25%;
+            left: 15%;
+        }
+
+        #testsubmenu2 {
+            top: 30%;
+            left: 50%;
+        }
+        
