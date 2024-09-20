@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Multiple Downloads</title>
+    <!-- Link to Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/2ff1179492.js" crossorigin="anonymous"></script>
+    <style>
+        /* Optional: Add some margin to the buttons for better layout */
+        .download-button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Minecraft Mods Downloads</h2>
+
+    <div>
+        WebDisplays 
+        <button class="download-button" onclick="openSingleDownload('https://www.curseforge.com/minecraft/mc-mods/webdisplays/download/4860333')">
+            <i class="fa-solid fa-download"></i>
+        </button>
+    </div>
+    <div>
+        MCEF 
+        <button class="download-button" onclick="openSingleDownload('https://cdn.modrinth.com/data/TObQ0HxZ/versions/UZNBhFta/mcef-fabric-2.1.4-1.20.1.jar')">
+            <i class="fa-solid fa-download"></i>
+        </button>
+    </div>
+    <div>
+        Essential 
+        <button class="download-button" onclick="openSingleDownload('https://downloads.essential.gg/v1/mods/essential/essential-pinned/updates/1.3.4.1/forge_1-20-1/?action=download')">
+            <i class="fa-solid fa-download"></i>
+        </button>
+    </div>
+    <div>
+        WorldEdit 
+        <button class="download-button" onclick="openSingleDownload('https://www.curseforge.com/minecraft/mc-mods/worldedit/download/4586218')">
+            <i class="fa-solid fa-download"></i>
+        </button>
+    </div>
+    <div>
+        MrCrayfish's Gun Mod 
+        <button class="download-button" onclick="openSingleDownload('https://www.curseforge.com/minecraft/mc-mods/mrcrayfishs-gun-mod-unofficial/download/5610926')">
+            <i class="fa-solid fa-download"></i>
+        </button>
+    </div>
+    <div>
+        Framework 
+        <button class="download-button" onclick="openSingleDownload('https://www.curseforge.com/minecraft/mc-mods/framework/download/5692385')">
+            <i class="fa-solid fa-download"></i>
+        </button>
+    </div>
+    <div>
+        MrCrayfish's Furniture Mod (Legacy) 
+        <button class="download-button" onclick="openSingleDownload('https://www.curseforge.com/minecraft/mc-mods/mrcrayfish-furniture-mod/download/4602980')">
+            <i class="fa-solid fa-download"></i>
+        </button>
+    </div>
+    <div>
+        JEI (Just Enough Items) 
+        <button class="download-button" onclick="openSingleDownload('https://www.curseforge.com/minecraft/mc-mods/jei/download/5738595')">
+            <i class="fa-solid fa-download"></i>
+        </button>
+    </div>
+    <div>
+        Waystones 
+        <button class="download-button" onclick="openSingleDownload('https://www.curseforge.com/minecraft/mc-mods/waystones/download/4956472')">
+            <i class="fa-solid fa-download"></i>
+        </button>
+    </div>
+    <div>
+        Macaw's Furniture 
+        <button class="download-button" onclick="openSingleDownload('https://www.curseforge.com/minecraft/mc-mods/macaws-furniture/download/5589873')">
+            <i class="fa-solid fa-download"></i>
+        </button>
+    </div>
+
+    <hr>
+
+    <button onclick="openDownloads()">Download All</button>
+
+    <script>
+        // Function to open individual URLs
+        function openSingleDownload(url) {
+            window.open(url, '_blank');
+        }
+
+        // Function to open all URLs at once
+        function openDownloads() {
+            const downloads = [
+                "https://www.curseforge.com/minecraft/mc-mods/webdisplays/download/4860333",
+                "https://cdn.modrinth.com/data/TObQ0HxZ/versions/UZNBhFta/mcef-fabric-2.1.4-1.20.1.jar",
+                "https://downloads.essential.gg/v1/mods/essential/essential-pinned/updates/1.3.4.1/forge_1-20-1/?action=download",
+                "https://www.curseforge.com/minecraft/mc-mods/worldedit/download/4586218",
+                "https://www.curseforge.com/minecraft/mc-mods/mrcrayfishs-gun-mod-unofficial/download/5610926",
+                "https://www.curseforge.com/minecraft/mc-mods/framework/download/5692385",
+                "https://www.curseforge.com/minecraft/mc-mods/mrcrayfish-furniture-mod/download/4602980",
+                "https://www.curseforge.com/minecraft/mc-mods/jei/download/5738595",
+                "https://www.curseforge.com/minecraft/mc-mods/waystones/download/4956472",
+                "https://www.curseforge.com/minecraft/mc-mods/macaws-furniture/download/5589873"
+            ];
+
+            downloads.forEach(url => {
+                window.open(url, '_blank');
+            });
+        }
+    </script>
+
+</body>
+</html>
