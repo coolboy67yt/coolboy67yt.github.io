@@ -3,25 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoolboyGames Website</title>
-    <script>
-        window.onload = function() {
-            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-            if (isMobile) {
-                window.location.href = "mobile_warn.html";
-            } else {
-                window.location.href = "main.html";
-            }
-        };
-    </script>
-    <style>
-      body {
-        background-color: black;
-        color: white; /* text color */
-      }
-    </style>
+    <title>coolboy's site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources/styles.css">
 </head>
 <body>
-    If you see this, then something went wrong, or the page is loading. Please report this error to coolboy67yt@gmail.com OR make a bug report on github.
+    <header>
+        <h1>coolboy67yt</h1>
+        <nav>
+            <ul>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="portfolio">
+            <h2>My Work</h2>
+            <ul>
+                <li>
+                    <strong>ReimaginedMC-Web:</strong> A website for Pacerman29's ReimaginedMC server! 
+                    <a href="https://remc.vercel.app">Visit</a> | 
+                    <a href="https://github.com/coolboy67yt/reimaginedmc-web">GitHub</a>
+                </li>
+                <li>
+                    <strong>GeminiCord:</strong> A Discord bot that uses Google's Gemini AI to talk to users. 
+                    <a href="https://github.com/Top-Hatted-Turtle-Development/GeminiCord">GitHub</a>
+                </li>
+                <li>
+                    <strong>mc-server-status:</strong> A JavaScript tool that makes it easy to grab the status of any Minecraft server! 
+                    <a href="https://github.com/coolboy67yt/mc-server-status">GitHub</a>
+                </li>
+                <li>
+                    <strong>Top Hatted Turtle Development:</strong> A group that develops websites, apps, bots, and much more! 
+                    <a href="https://turtledev.vercel.app">Website</a> | 
+                    <a href="https://github.com/Top-Hatted-Turtle-Development">GitHub</a>
+                </li>
+            </ul>
+        </section>
+        <section id="blog">
+            <h2>Blog Posts</h2>
+            <p>i have my own website now. yay :)</p>
+        </section>
+    </main>
+    <footer>
+        <p>Made by Top Hatted Turtle Development</p>
+    </footer>
+    <script src="resources/index.js"></script>
 </body>
 </html>

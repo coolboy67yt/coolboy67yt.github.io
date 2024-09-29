@@ -1,0 +1,48 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Using Roboto, with Arial as a fallback */
+    background-color: #080708; /* Background color */
+    color: #ABD2FA; /* Default text color */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3D3B8E; /* Header background */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Horizontal list */
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #7692FF; /* Link color */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+nav a:hover {
+    color: #3D518C; /* Hover effect for links */
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #7692FF; /* Headings color */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3D3B8E; /* Footer background */
+    color: #ABD2FA; /* Footer text color */
+}

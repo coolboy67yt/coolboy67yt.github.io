@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolboyGames Website</title>
+    <script>
+        window.onload = function() {
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+                window.location.href = "mobile_warn.html";
+            } else {
+                window.location.href = "main.html";
+            }
+        };
+    </script>
+    <style>
+      body {
+        background-color: black;
+        color: white; /* text color */
+      }
+    </style>
+</head>
+<body>
+    If you see this, then something went wrong, or the page is loading. Please report this error to coolboy67yt@gmail.com OR make a bug report on github.
+</body>
+</html>
