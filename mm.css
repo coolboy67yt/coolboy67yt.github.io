@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'Continuum';
+  src: url('assets/fonts/contm.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DS-Digital';
+  src: url('assets/fonts/DS-DIGI.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  transform-origin: center; /* Keeps the top-left corner fixed */
+  font-family: 'Continuum', sans-serif;
+  background: linear-gradient(to bottom, #e6e6e6, #ffffff);
+}
+
+.wii-menu {
+  max-width: 800px;
+  margin: 200px auto;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.7); 
+  transform-origin: center;
+}
+
+.channels {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+  transition: opacity 1s ease-in-out;
+}
+
+.channel {
+  background: #f0f0f0;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  transition: transform 0.4s ease, opacity 0.1s ease;
+}
+
+.channel img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.channel.empty {
+  background: url('assets/static.gif') no-repeat center center;
+  background-size: 120%;
+  background-position: center -40px;
+  border: 2px solid #ddd;
+}
+
+.time {
+  font-family: 'DS-Digital';
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 100px;
+  background: url("assets/notch.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 10px 10px;
+}
+
+.wii-logo {
+  width: 80px;
+  height: 80px;
+  background: url('assets/buttons/Wii Settings.png') no-repeat center;
+  background-size: cover;
+}
+
+.time-date {
+  text-align: center;
+}
+
+.date {
+  font-size: 20px;
+  color: #555;
+  padding-bottom: 30px;
+}
+
+.mail {
+  width: 80px;
+  height: 80px;
+  background: url('assets/buttons/Empty.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail img {
+  filter: grayscale(100%) brightness(60%);
+}
+
+/* Zoom and fade effects for the channel and transition to new screen */
+.channel.zoom {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.channels.fade-out {
+  opacity: 0;
+}
+
+.screen {
+  display: none;
+  background-color: #fff;
+  color: #000;
+  height: 100vh;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.screen.active {
+  display: block;
+  opacity: 1;
+}
