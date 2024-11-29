@@ -37,6 +37,25 @@
     // Update every second
     setInterval(updateTime, 1000);
   </script>
+  <script>
+    function scaleMenu() {
+      const menu = document.querySelector('.wii-menu');
+      const viewportWidth = window.innerWidth;
+      const viewportHeight = window.innerHeight;
+
+      // Calculate the scaling factor
+      const scaleX = viewportWidth / menu.offsetWidth;
+      const scaleY = viewportHeight / menu.offsetHeight;
+      const scale = Math.min(scaleX, scaleY);
+
+      // Apply the scale
+      menu.style.transform = `scale(${scale})`;
+    }
+
+    // Run the scaling function on load and resize
+    window.addEventListener('load', scaleMenu);
+    window.addEventListener('resize', scaleMenu);
+  </script>
 </head>
 <body>
   <div class="wii-menu">
