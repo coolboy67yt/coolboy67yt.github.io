@@ -81,6 +81,7 @@ body {
   padding: 10px;
   height: 100px;
   background: url("assets/notch.png");
+  background-position: center 0;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0 0 10px 10px;
@@ -117,7 +118,7 @@ body {
   filter: grayscale(100%) brightness(60%);
 }
 
-/* Zoom and fade effects for the channel and transition to new screen */
+/* THIS IS UNUSED STUFF WILL REMOVE LATER IG */
 .channel.zoom {
   transform: scale(1.2);
   opacity: 0.8;
