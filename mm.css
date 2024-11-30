@@ -45,6 +45,7 @@ body {
 }
 
 .channel {
+  background-position: center center;
   background: #f0f0f0;
   border: 2px solid #ddd;
   border-radius: 10px;
@@ -63,8 +64,6 @@ body {
 
 .channel.empty {
   background: url('assets/static.gif') no-repeat center center;
-  background-size: 120%;
-  background-position: center -40px;
   border: 2px solid #ddd;
 }
 
