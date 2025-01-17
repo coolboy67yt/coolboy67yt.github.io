@@ -8,13 +8,41 @@
         body {
             background-image: url("assets/BG_common.gif");
             background-repeat: repeat-x;
-            background-size: 100% 100vh; /* This makes the background 100% wide and 100vh tall */
+            background-size: 100% 100vh;
             color: white;
             font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .button-container button {
+            width: 100px;
+            height: 100px;
+            font-size: 16px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button-container button:hover {
+            background-color: rgba(0, 0, 0, 0.9);
         }
     </style>
 </head>
 <body>
-    <h1>The archives.... (ooo, scary!)</h1>
+    <div class="button-container">
+        <button>V1</button>
+        <button>V2</button>
+        <button>V3</button>
+    </div>
 </body>
 </html>
