@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="papasburgeria_100x100.jpg" type="image/jpg">
+    <title>papas-burgeria</title>
+    <!--Support for SWF files after the Flash shutdown (bc fuck adobe)-->
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" style="width: 100%; height: 100%;"></div>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.addEventListener("load", (event) => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            const container = document.getElementById("container");
+            container.appendChild(player);
+            player.ruffle().load("papasburgeria.swf");
+        });
+    </script>
+</body>
+</html>
