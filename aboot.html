@@ -66,11 +66,9 @@
             transition: filter 0.3s ease;
             z-index: -1;
         }
-
         .box:hover::before {
             filter: blur(3px); /* Less blur on hover */
         }
-
         .box:hover {
             transform: scale(1.2); /* Makes the item grow */
             box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5); /* Adds glow effect */
@@ -81,12 +79,12 @@
         }
 
         /* Assigning Background Images */
-        div.mc { background-image: url('assets/minecraftlol.jpg'); }
-        div.website { background-image: url('https://newlightdigital.com/wp-content/uploads/2024/01/new-website-in-2024.jpeg'); }
-        div.design { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTva5OpR7pVrjutMxcDRkkEb6GHMVGmU_Vg4A&s'); }
-        div.editing { background-image: url('assets/videoedit.jpg'); }
-        div.python { background-image: url('assets/pythonstuff.jpg'); }
-        div.cafe { background-image: url('assets/pythonstuff.jpg'); }
+        div.mc::before { background-image: url('assets/minecraftlol.jpg'); }
+        div.website::before { background-image: url('https://newlightdigital.com/wp-content/uploads/2024/01/new-website-in-2024.jpeg'); }
+        div.design::before { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTva5OpR7pVrjutMxcDRkkEb6GHMVGmU_Vg4A&s'); }
+        div.editing::before { background-image: url('assets/videoedit.jpg'); }
+        div.python::before { background-image: url('assets/pythonstuff.jpg'); }
+        div.cafe::before { background-image: url('assets/pythonstuff.jpg'); }
 
         .signature {
             position: absolute;
