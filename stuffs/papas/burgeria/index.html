@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="papasburgeria_100x100.jpg" type="image/jpg">
-    <title>papas-burgeria</title>
-    <!--Support for SWF files after the Flash shutdown (bc fuck adobe)-->
+    <link rel="icon" href="100x100.jpg" type="image/jpg">
+    <title>Papa's Archiveria</title>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
     <style>
         body {
@@ -16,7 +15,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: black; /* Optional: Set a background color */
+            background-color: black;
         }
 
         #container {
@@ -45,7 +44,7 @@
             container.appendChild(player);
             player.style.width = "100%";
             player.style.height = "100%";
-            player.ruffle().load("papasburgeria.swf");
+            player.ruffle().load("game.swf");
         });
     </script>
 </body>
