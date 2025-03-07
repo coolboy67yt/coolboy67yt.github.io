@@ -1,6 +1,5 @@
 let originalTitle = document.title;  // Grabbing the original title
 let i = 0;
-let isCursor = false;
 
 function updateTitle() {
   if (i === originalTitle.length) {
@@ -9,8 +8,8 @@ function updateTitle() {
   }
 
   let currentText = originalTitle.substring(0, i);
-  if (i % 2 === 0) {
-    currentText += "_"; // Add underscore as a cursor after every even character
+  if (i % 2 === 0 && i !== originalTitle.length) {
+    currentText += "_"; // Add underscore as a cursor after every even character, except at the end
   }
 
   document.title = currentText;
