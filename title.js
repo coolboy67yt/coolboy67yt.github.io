@@ -4,6 +4,7 @@ let i = 0;
 function updateTitle() {
   if (i === originalTitle.length) {
     clearInterval(interval); // Stop the interval once the title is fully typed
+    document.title = originalTitle;
     return;
   }
 
