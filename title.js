@@ -23,7 +23,7 @@ function updateTitle() {
   }
 
   let currentText = title.substring(0, i);
-  if (isCursor && i % 2 === 0) {
+  if (isCursor && i % 2 === 0 && i !== title.length) {
     currentText += "_";
   }
 
