@@ -8,9 +8,6 @@ function updateTitle() {
   }
 
   let currentText = originalTitle.substring(0, i);
-  if (i % 2 === 0 && i !== originalTitle.length) {
-    currentText += "_"; // Add underscore as a cursor after every even character, except at the end
-  }
 
   document.title = currentText;
   i++;
