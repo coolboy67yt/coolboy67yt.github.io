@@ -4,16 +4,17 @@ let isCursor = false;
 
 function updateTitle() {
   if (i === originalTitle.length) {
-    i = 0; // Reset i to 0 when finished typing
+    clearInterval(interval); // Stop the interval once the title is fully typed
+    return;
   }
 
   let currentText = originalTitle.substring(0, i);
-  if (isCursor && i % 2 === 0) {
-    currentText += "_";
+  if (i % 2 === 0) {
+    currentText += "_"; // Add underscore as a cursor after every even character
   }
 
   document.title = currentText;
   i++;
 }
 
-setInterval(updateTitle, 200); // Adjust the interval speed (200ms here)
+let interval = setInterval(updateTitle, 200); // Adjust the interval speed (200ms here)
